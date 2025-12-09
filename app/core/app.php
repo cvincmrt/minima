@@ -4,11 +4,12 @@ class App
 {
     public function __construct()
     {
-       print_r($_GET);
+        $url = $this->splitUrl();
+        show($url);
     }
 
     private function splitUrl(){
-
+        return explode("/", trim($_GET["url"], "/"));
     }
 
 
