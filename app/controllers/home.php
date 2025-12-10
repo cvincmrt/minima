@@ -3,6 +3,14 @@
 class Home
 {
     function index(){
-        echo "home controler a spustila sa metoda index";
+        $this->view("home");
+    }
+
+    function view($view){
+        if(file_exists("../app/view/".$view.".php")){
+            include "../app/view/".$view.".php";
+        }else{
+            include "../app/view/404.php";
+        }
     }
 } 
