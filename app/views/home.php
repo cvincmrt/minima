@@ -1,0 +1,1 @@
+Toto je stranka home

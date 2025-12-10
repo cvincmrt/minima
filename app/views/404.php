@@ -1,0 +1,1 @@
+chybova hlaska 404 stranka neexistuje!!!
